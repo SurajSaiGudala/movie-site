@@ -49,7 +49,196 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-img"><img src="/media/godfather.jpg" alt="The Godfather"
+            <div class="card-img"><i<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyMovieSite</title>
+  <style>
+    /* ---------- Global Styles ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #0b0c10, #1f2833);
+      color: #fff;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      color: #66fcf1;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    }
+
+    footer {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.85);
+      color: #ccc;
+      padding: 15px 0;
+      font-size: 0.9rem;
+      box-shadow: 0 -3px 10px rgba(0,0,0,0.4);
+      letter-spacing: 0.5px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      flex: 1;
+    }
+
+    /* ---------- Movie Card Section ---------- */
+    .sec {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      flex: 1 1 220px;
+      max-width: 220px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    }
+
+    .box img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      border-bottom: 2px solid #45a29e;
+    }
+
+    .box h2 {
+      font-size: 1.05rem;
+      margin: 10px 0 5px;
+      color: #66fcf1;
+    }
+
+    .box p {
+      font-size: 0.9rem;
+      color: #c5c6c7;
+      margin-bottom: 12px;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 1024px) {
+      .box {
+        flex: 1 1 30%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .box {
+        flex: 1 1 45%;
+        max-width: 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .box {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+
+      header {
+        font-size: 1.5rem;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="heading">
+      <header>MyMovieSite</header>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="sec">
+
+        <!-- Movie 1 -->
+        <div class="box" onclick="openMovie('movie1.html')">
+          <img src="/media/avatar2.jpg" alt="Avatar 2">
+          <h2>Avatar 2 : Fire and Ash</h2>
+          <p>Sci-fi | Action | 2025</p>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="box" onclick="openMovie('movie2.html')">
+          <img src="/media/darkknight.jpg" alt="The Dark Knight">
+          <h2>The Dark Knight</h2>
+          <p>Action | Drama | 2008</p>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="box" onclick="openMovie('movie3.html')">
+          <img src="/media/inception.jpeg" alt="Inception">
+          <h2>Inception</h2>
+          <p>Sci-fi | Thriller | 2010</p>
+        </div>
+
+        <!-- Movie 4 -->
+        <div class="box" onclick="openMovie('movie4.html')">
+          <img src="/media/godfather.jpg" alt="The Godfather">
+          <h2>The Godfather</h2>
+          <p>Crime | Drama | 1972</p>
+        </div>
+
+        <!-- Movie 5 -->
+        <div class="box" onclick="openMovie('movie5.html')">
+          <img src="/media/interstellar.jpg" alt="Interstellar">
+          <h2>Interstellar</h2>
+          <p>Sci-fi | Drama | 2014</p>
+        </div>
+
+        <!-- Movie 6 -->
+        <div class="box" onclick="openMovie('movie6.html')">
+          <img src="/media/killbill.jpg" alt="Kill Bill">
+          <h2>Kill Bill: Volume 1</h2>
+          <p>Action | Fiction | 2003</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2025 My Movie Website | Designed with ❤️ for Cinema Fans</footer>
+
+  <script>
+    function openMovie(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>
+g src="/media/godfather.jpg" alt="The Godfather"
                     style="border-radius: 10px; width: 200px; height: 300px;"></div>
             <div class="card-body">
                 <h4>Movie 5</h4>
@@ -61,5 +250,6 @@
         <p>© 2025 MyMovieSite</p>
     </footer>
 </body>
+
 
 </html>
