@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avatar 2 : Fire and Ash</title>
+  <style>
+    /* ---------- Global Styles ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #0b0c10, #1f2833);
+      color: #fff;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      color: #66fcf1;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .movie-card {
+      display: flex;
+      flex-wrap: wrap;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      padding: 30px;
+      max-width: 900px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      gap: 30px;
+    }
+
+    .movie-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+    }
+
+    .movie-poster {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+      object-fit: cover;
+      flex: 1 1 300px;
+    }
+
+    .movie-details {
+      flex: 2 1 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .movie-details h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #66fcf1;
+    }
+
+    .movie-info p {
+      margin: 6px 0;
+      font-size: 1rem;
+      color: #ddd;
+    }
+
+    .movie-description {
+      margin-top: 20px;
+      font-size: 1.05rem;
+      text-align: justify;
+      color: #e6e6e6;
+      line-height: 1.8;
+    }
+
+    .back-btn {
+      margin-top: 30px;
+      padding: 12px 20px;
+      background: #45a29e;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      align-self: flex-start;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .back-btn:hover {
+      background: #66fcf1;
+      color: #0b0c10;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.85);
+      color: #ccc;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      box-shadow: 0 -3px 10px rgba(0,0,0,0.4);
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 768px) {
+      .movie-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .movie-details {
+        align-items: center;
+      }
+
+      .movie-description {
+        text-align: left;
+        font-size: 0.95rem;
+      }
+
+      .back-btn {
+        align-self: center;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Avatar 2 : Fire and Ash</header>
+
+  <main>
+    <div class="movie-card">
+      <img src="/media/avatar2.jpg" alt="Avatar 2 Poster" class="movie-poster">
+
+      <div class="movie-details">
+        <h2>Avatar 2 : Fire and Ash</h2>
+        <div class="movie-info">
+          <p><strong>Genre:</strong> Action / Sci-Fi / Adventure</p>
+          <p><strong>Release Year:</strong> 2024</p>
+          <p><strong>Director:</strong> James Cameron</p>
+        </div>
+
+        <p class="movie-description">
+          “Avatar 2: Fire and Ash” continues the breathtaking saga of Pandora.
+          Jake Sully and Neytiri face new threats as an ancient fire-tribe rises
+          from the ashes, determined to reshape the balance of life on Pandora.
+          With stunning visuals, emotional depth, and a powerful message about
+          survival and unity, this sequel takes audiences deeper into the heart
+          of Cameron’s universe.
+        </p>
+
+        <button class="back-btn" onclick="window.location.href='example.html'">⬅ Back to Home</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2025 My Movie Website | Designed with ❤️ for Cinema Fans</footer>
+
+</body>
+</html>
